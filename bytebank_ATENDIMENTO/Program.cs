@@ -40,27 +40,43 @@
 //     }
 // }
 
-Array amostra = Array.CreateInstance(typeof(double), 5);
-amostra.SetValue(7.8, 0);
-amostra.SetValue(8, 1);
-amostra.SetValue(8, 2);
-amostra.SetValue(3.8, 3);
-amostra.SetValue(5.8, 4);
+// Array amostra = Array.CreateInstance(typeof(double), 5);
+// amostra.SetValue(7.8, 0);
+// amostra.SetValue(8, 1);
+// amostra.SetValue(8, 2);
+// amostra.SetValue(3.8, 3);
+// amostra.SetValue(5.8, 4);
 
-TestaMediana(amostra);
-static void TestaMediana(Array array)
+// TestaMediana(amostra);
+// static void TestaMediana(Array array)
+// {
+//     if ((array == null) || (array.Length == 0))
+//     {
+//         System.Console.WriteLine("Array está vazio ou Nulo.");
+//     }
+//     double[] numerosOrdenados = (double[])array.Clone();
+//     Array.Sort(numerosOrdenados);
+
+//     int tamanho = numerosOrdenados.Length;
+//     int meio = tamanho / 2;
+//     double mediana = (tamanho % 2 != 0) ? numerosOrdenados[meio] : (numerosOrdenados[meio - 1] / 2);
+//     System.Console.WriteLine($"Com base na amostra a mediana = {mediana}");
+// }
+
+
+using bytebank.Modelos.Conta;
+
+void TestaArrayDeContaCorrente()
 {
-    if ((array == null) || (array.Length == 0))
+    ContaCorrente[] listaDeContas = new ContaCorrente[]{
+        new ContaCorrente(874, "5679787-A"),
+        new ContaCorrente(874, "4456668-B"),
+        new ContaCorrente(874, "7781438-C")
+    };
+    for (int i = 0; i < listaDeContas.Length; i++)
     {
-        System.Console.WriteLine("Array está vazio ou Nulo.");
+        ContaCorrente contaAtual = listaDeContas[i];
+        Console.WriteLine($"Índice {i} - {contaAtual.Conta}");
     }
-    double[] numerosOrdenados = (double[])array.Clone();
-    Array.Sort(numerosOrdenados);
-
-    int tamanho = numerosOrdenados.Length;
-    int meio = tamanho / 2;
-    double mediana = (tamanho % 2 != 0) ? numerosOrdenados[meio] : (numerosOrdenados[meio - 1] / 2);
-    System.Console.WriteLine($"Com base na amostra a mediana = {mediana}");
 }
-
-
+TestaArrayDeContaCorrente();
