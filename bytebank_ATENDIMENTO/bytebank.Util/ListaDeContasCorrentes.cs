@@ -12,6 +12,7 @@ public class ListaDeContasCorrentes
     }
     public void Adicionar(ContaCorrente item)
     {
+        System.Console.WriteLine($"Adicionando item na posição: {_proximaPosicao}");
         itens[_proximaPosicao] = item;
         _proximaPosicao++;
     }
