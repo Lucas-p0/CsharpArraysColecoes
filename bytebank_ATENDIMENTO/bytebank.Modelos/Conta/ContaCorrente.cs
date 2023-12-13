@@ -96,10 +96,11 @@
 			return true;
 		}
 
-		public ContaCorrente(int numero_agencia, string conta)
+		public ContaCorrente(int numero_agencia, string conta, double saldo)
 		{
 			Numero_agencia = numero_agencia;
 			Conta = conta;
+			Saldo = saldo;
 			TotalDeContasCriadas += 1;
 		}
 

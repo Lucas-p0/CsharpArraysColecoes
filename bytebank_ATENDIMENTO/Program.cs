@@ -71,14 +71,19 @@ void TestaArrayDeContaCorrente()
 {
     ListaDeContasCorrentes listaDeContas = new ListaDeContasCorrentes();
     {
-        listaDeContas.Adicionar(new ContaCorrente(874, "5679787-A"));
-        listaDeContas.Adicionar(new ContaCorrente(874, "4456668-B"));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
+        listaDeContas.Adicionar(new ContaCorrente(874, "5679787-A", 123));
+        listaDeContas.Adicionar(new ContaCorrente(874, "4456668-B", 5675455));
+        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 75756));
+        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 567567));
+        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 6756));
+        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 234));
+        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 23424));
     }
+
+    // for (int i = 0; i < listaDeContas.Length; i++)
+    // {
+
+    // }
 
 };
 // for (int i = 0; i < listaDeContas.Length; i++)
