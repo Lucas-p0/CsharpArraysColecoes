@@ -76,6 +76,8 @@ void TestaArrayDeContaCorrente()
         listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
         listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
         listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
+        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
+        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C"));
     }
 
 };

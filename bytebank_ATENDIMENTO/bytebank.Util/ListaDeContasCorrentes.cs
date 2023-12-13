@@ -16,4 +16,20 @@ public class ListaDeContasCorrentes
         itens[_proximaPosicao] = item;
         _proximaPosicao++;
     }
+    private void VeririficarCapacidade(int tamanhoNecessario)
+    {
+        if (itens.Length >= tamanhoNecessario)
+        {
+            return;
+        }
+
+        Console.WriteLine("Aumentando a capacidade da lista:");
+        ContaCorrente[] novoArray = new ContaCorrente[tamanhoNecessario];
+        for (int i = 0; i < itens.Length; i++)
+        {
+            novoArray[i] = itens[i];
+        }
+        itens = novoArray;
+
+    }
 }
