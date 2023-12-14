@@ -1,5 +1,5 @@
-﻿//mediaDasIdades();
-//TestaBurcarPalavras();
+﻿// mediaDasIdades();
+// TestaBurcarPalavras();
 
 // static void mediaDasIdades()
 // {
@@ -64,32 +64,60 @@
 // }
 
 
-using bytebank.Modelos.Conta;
-using bytebank_ATENDIMENTO.bytebank.Util;
+// using bytebank.Modelos.Conta;
+// using bytebank_ATENDIMENTO.bytebank.Util;
 
-void TestaArrayDeContaCorrente()
-{
-    ListaDeContasCorrentes listaDeContas = new ListaDeContasCorrentes();
-    {
-        listaDeContas.Adicionar(new ContaCorrente(874, "5679787-A", 123));
-        listaDeContas.Adicionar(new ContaCorrente(874, "4456668-B", 5675455));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 75756));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 567567));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 6756));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 234));
-        listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 23424));
-    }
+// void TestaArrayDeContaCorrente()
+// {
+//     ListaDeContasCorrentes listaDeContas = new ListaDeContasCorrentes();
+//     {
+//         listaDeContas.Adicionar(new ContaCorrente(874, "5679787-A", 123));
+//         listaDeContas.Adicionar(new ContaCorrente(874, "4456668-B", 5675455));
+//         listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 75756));
+//         listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 567567));
+//         listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 6756));
+//         listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 234));
+//         listaDeContas.Adicionar(new ContaCorrente(874, "7781438-C", 23424));
+//     }
 
-    // for (int i = 0; i < listaDeContas.Length; i++)
-    // {
+//     for (int i = 0; i < listaDeContas.Length; i++)
+//     {
 
-    // }
+//     }
 
-};
+// };
 // for (int i = 0; i < listaDeContas.Length; i++)
 // {
 //     ContaCorrente contaAtual = listaDeContas[i];
 //     Console.WriteLine($"Índice {i} - {contaAtual.Conta}");
 // }
 
-TestaArrayDeContaCorrente();
+// TestaArrayDeContaCorrente();
+
+// System.Console.WriteLine("Digite a senha:");
+
+// int x = int.Parse(Console.ReadLine());
+// while (x != 2002)
+// {
+//     System.Console.WriteLine("Digite a senha:");
+//     x = int.Parse(Console.ReadLine());
+
+// }
+// System.Console.WriteLine("Senha correta");
+
+// while ()
+// {
+
+// }
+
+Console.Write("Quantos numeros deseja somar? ");
+int n = int.Parse(Console.ReadLine());
+int soma = 0;
+for (int i = 1; i <= n; i++)
+{
+    Console.Write($"Valor #{i}: ");
+    int valor = int.Parse(Console.ReadLine());
+    soma += valor;
+
+}
+Console.Write($"Soma = {soma}");
